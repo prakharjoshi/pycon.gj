@@ -557,8 +557,7 @@ body {
 }
 @media not screen and (max-width: 940px) {
   body {
-    background: #d3d3d3 url('/static/img/bg-summer.jpg') center center no-repeat;
-    background-attachment: fixed;
+    background: #d3d3d3;
   }
 }
 .github-ribbon {
