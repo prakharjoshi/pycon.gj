@@ -162,52 +162,7 @@
                 </ul>
             </nav>
             <article id="about">
-                <h2>PyCon Gujarat 2014, Sept.&nbsp;6&#8209;7</h2>
-                <section class="counter" id="counter">
-                    <span class="now-live">Now live!</span>
-                    <div class="days">
-                        <div class="value" id="days-value">75</div>
-                        <div class="label">days</div>
-                    </div>
-                    <div class="hours">
-                        <div class="value" id="hours-value">06</div>
-                        <div class="label">hours</div>
-                    </div>
-                    <div class="minutes">
-                        <div class="value" id="minutes-value">24</div>
-                        <div class="label">minutes</div>
-                    </div>
-                    <div class="seconds">
-                        <div class="value" id="seconds-value">33</div>
-                        <div class="label">seconds</div>
-                    </div>
-                    <script>
-                        updateCounter();
-                    </script>
-                </section>
-                <div class="summary">
-                </div>
-                <aside class="location">
-                    <h3>Location</h3>
-                    <p>PyCon Gujarat 2014 will be held at <a href="http://www.daiict.ac.in/">DA-IICT, Gandhinagar</a> in the capital of Gujarat, India</p>
-                    <div class="map-wrapper">
-                        <a href="/venue/" target="_self">
-                            See Venue for more information about conference location.
-                        </a>
-                        <img src="http://static-maps.yandex.ru/1.x/?pt=60.92495,56.5789,pm2lbm&ll=60.92495,56.5789&size=240,140&spn=0.15,0.15&l=map">
-                    </div>
-                </aside>
-                <section class="conference-objectives">
-                    <ul>
-                        <li>A conference for experienced python-developers</li>
-                        <li>2 days</li>
-                        <li>Peaceful countryside venue</li>
-                        <li>Talks, workshops, discussion panels, lightning talks</li>
-                        <li>Afterparty!</li>
-                    </ul>
-                </section>
-                <section class="technical-details"></section>
-                <section class="participants-geo"></section>
+                {% block content %} {% endblock %}
             </article>
             <div class="push"></div>
         </div>
