@@ -108,6 +108,30 @@ class RegisterHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template("register.html")
         self.response.write(template.render())
 
+
+class ConferenceHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("conference.html")
+        self.response.write(template.render())
+
+
+class ProgramHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("program.html")
+        self.response.write(template.render())
+
+
+class ParticipationHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("participation.html")
+        self.response.write(template.render())
+
+
+class PartnersHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("partners.html")
+        self.response.write(template.render())
+
 ############### End handlers ##################
 
 
@@ -127,7 +151,11 @@ app = webapp2.WSGIApplication([
     ('/partners/list', PartnersListHandler),
     ('/partners/join', PartnerJoinHandler),
     ('/cfp', CFPHandler),
-    ('/register', RegisterHandler)
+    ('/register', RegisterHandler),
+    ('/conference', ConferenceHandler),
+    ('/program', ProgramHandler),
+    ('/participation', ParticipationHandler),
+    ('/partners', PartnersHandler)
 ], debug=True)
 
 ############# End initialization ##############
