@@ -138,7 +138,7 @@ app = webapp2.WSGIApplication([
     ('/venue',venue),
     ('/hotels',hotels),
     ('/partners/list',partnersList),
-    ('/partners/join/',partnerJoin),
+    ('/partners/join',partnerJoin),
     ('/cfp',cfp),
     ('/register',register),
     ('/conference',conference),
