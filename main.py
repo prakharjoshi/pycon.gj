@@ -139,28 +139,6 @@ class PartnersHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-<<<<<<< HEAD
-    ('/coc', codeofconduct),
-    ('/organizers',organisers),
-    ('/contacts',contacts),
-    ('/speakers',speakers),
-    ('/content',content),
-    ('/schedule',schedule),
-    ('/price',price),
-    ('/venue',venue),
-    ('/hotels',hotels),
-    ('/partners/list',partnersList),
-    ('/partners/join',partnerJoin),
-    ('/cfp',cfp),
-    ('/register',register),
-    ('/conference',conference),
-    ('/program',program),
-    ('/participation',participation),
-    ('/partners',partners),
-    ('/archive',archive)
-
-
-=======
     ('/coc', COChandler),
     ('/organizers', OrganisersHandlers),
     ('/contacts', ContactsHandler),
@@ -178,7 +156,6 @@ app = webapp2.WSGIApplication([
     ('/program', ProgramHandler),
     ('/participation', ParticipationHandler),
     ('/partners', PartnersHandler)
->>>>>>> d1453268b0fb881b0e5a2f94ff1b6b50aca5db43
 ], debug=True)
 
 ############# End initialization ##############
