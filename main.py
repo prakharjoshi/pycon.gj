@@ -31,10 +31,6 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(template.render())
 
 
-class COChandler(webapp2.RequestHandler):
-    def get(self):
-        template = JINJA_ENVIRONMENT.get_template("coc.html")
-        self.response.write(template.render())
 
 
 class OrganisersHandlers(webapp2.RequestHandler):
@@ -139,7 +135,6 @@ class PartnersHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('/coc', COChandler),
     ('/organizers', OrganisersHandlers),
     ('/contacts', ContactsHandler),
     ('/speakers', SpeakersHandler),
